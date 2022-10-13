@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let link of links" (click)="onSelectLink(link.name)">
+    <a href="#">
+      <i [class]="link.icon"></i>
+      {{ link.name }}
+    </a>
+  </li>
+</ul>
